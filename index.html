@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AIRA — collect moments, not things</title>
+  <style>
+    :root {
+      --white: #cce5f6;
+      --pastel-blue: #cce5f6;
+      --accent: #f26522;
+      --text: #333;
+      --bg: #f9f9f9;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+    }
+
+    header {
+      background-color: var(--white);
+      padding: 20px;
+      text-align: center;
+    }
+
+    header img {
+      height: 80px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      background-color: var(--pastel-blue);
+      padding: 10px 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: bold;
+    }
+
+    section {
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .product {
+      background-color: white;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .product button {
+      background-color: var(--accent);
+      color: white;
+      border: none;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 400px;
+      margin: auto;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: var(--white);
+    }
+  </style>
+</head>
+<body>
+<header>
+  <img src="images/aira-logo.jpg" alt="AIRA Logo" loading="lazy" />
+</header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#shop">Shop</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home">
+    <h1>Welcome to AIRA</h1>
+    <p>Collect moments, not things.</p>
+  </section>
+
+  <section id="shop">
+    <h2>Shop Our Collection</h2>
+    <div class="products">
+      <div class="product">
+  <img src="images/products/tshirt1-front.jpg" alt="T-shirt front" loading="lazy" />
+        <h3>«Collect moments» T-shirt</h3>
+        <p>£13.00</p>
+        <button type="button">Add to Cart</button>
+      </div>
+      <div class="product">
+  <img src="images/products/tshirt2-front.jpg" alt="Fox polo front" loading="lazy" />
+        <h3>Fox Polo Shirt</h3>
+        <p>£15.00</p>
+        <button type="button">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About us</h2>
+    <p>At AIRA, we create sustainable T-shirts for teens who care about the planet and their style. Made with eco-friendly materials and bold designs, our T-shirts let you express yourself while keeping it green. Wear what matters—because the future looks better in sustainable fashion.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>Follow us on
+      <a href="https://www.instagram.com/aira.tshirts?igsh=MW42emRxNzk2OXE2bQ==" target="_blank">Instagram</a>,
+      <a href="#">TikTok</a>, and
+      <a href="#">Twitter</a></p>
+    <p>&copy; 2025 AIRA</p>
+  </footer>
+</body>
+</html>
